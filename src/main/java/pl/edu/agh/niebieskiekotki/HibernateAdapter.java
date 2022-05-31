@@ -15,6 +15,9 @@ import java.util.List;
 
 @Component
 public class HibernateAdapter {
+
+
+
     @PersistenceContext
     public EntityManager entityManager;
 
