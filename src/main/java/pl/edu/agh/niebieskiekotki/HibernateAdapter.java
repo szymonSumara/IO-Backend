@@ -22,7 +22,7 @@ public class HibernateAdapter {
     public EntityManager entityManager;
 
     public <T> List<T> getAll(Class<T> c) {
-        Session session = entityManager.unwrap(Session.class);
+        Session session  = entityManager.unwrap(Session.class);
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<T> criteriaQuery = builder.createQuery(c);
 
