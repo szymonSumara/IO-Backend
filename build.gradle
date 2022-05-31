@@ -46,6 +46,14 @@ jacocoTestReport {
 	}
 }
 
+jar {
+   manifest {
+	   attributes(
+			   'Main-Class': 'pl.edu.agh.niebieskiekotki.StudentEnrollmentApplication'
+	   )
+   }
+}
+
 tasks.named('test') {
 	useJUnitPlatform()
 }
