@@ -48,7 +48,7 @@ public class FileWithLinksCreator {
 
         int i = 1;
         for (QuestionnaireAccess questionnaireAccess : questionnaireAccessesList) {
-            addRow(questionnaireAccess.getStudent(), "localhost:3000/vote/" + questionnaireAccess.getLinkPath(), sheet, i);
+            addRow(questionnaireAccess.getStudent(), "https://io-nk-enroll.herokuapp.com/vote/" + questionnaireAccess.getLinkPath(), sheet, i);
             i++;
         }
 
